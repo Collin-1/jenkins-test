@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello World!</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Custom font for a better look */
+      body {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+  </head>
+  <body
+    class="flex items-center justify-center min-h-screen bg-gradient-to-br from-blue-100 to-purple-200 p-4"
+  >
+    <div
+      class="bg-white p-8 rounded-xl shadow-2xl text-center max-w-md w-full border border-gray-200"
+    >
+      <h1 class="text-5xl font-extrabold text-gray-900 mb-4 animate-pulse">
+        Hello World!
+      </h1>
+      <p class="text-lg text-gray-700">This is a simple HTML page.</p>
+    </div>
+
+    <script>
+      // Basic JavaScript for animation (optional, but adds a nice touch)
+      // This script targets the h1 element and toggles an animation class
+      document.addEventListener("DOMContentLoaded", () => {
+        const heading = document.querySelector("h1");
+        setInterval(() => {
+          heading.classList.toggle("animate-pulse");
+        }, 2000); // Toggles pulse animation every 2 seconds
+      });
+    </script>
+  </body>
+</html>
